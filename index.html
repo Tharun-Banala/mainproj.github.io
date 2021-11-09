@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -40,11 +40,12 @@
           <li><a class="main-nav-link" href="/menu">Menu</a></li>
           <li><a class="main-nav-link" href="/reservations">Reservations</a></li>
           <li><a class="main-nav-link" href="/cart">Cart</a></li>
-          <li><a class="main-nav-link" href="/myorders">My Orders</a></li>
+          <li><a class="main-nav-link" href="#">My Orders</a></li>
           <li><a class="main-nav-link" href="#">About Us</a></li>
           <li><a class="main-nav-link nav-cta" href="/login">Login</a></li>
         </ul>
       </nav>
+      <img src="static/img/moon.png" id="icon" width=40 height=40>
     </header>
     <main>
       <section class="section-hero">
@@ -95,101 +96,112 @@
         <div class="container grid grid--3-cols margin-bottom-md">
           <div class="meal">
             <img
-              src="static/img/menu/2.png"
+              src="static/img/meals/meal-1.jpg"
               class="meal-img"
-              alt="Veg Spring Roll"
+              alt="Japanese Gyozas"
             />
             <div class="meal-content">
               <div class="meal-tags">
                 <span class="tag tag--veg">Vegetarian</span>
               </div>
-              <p class="meal-title">Veg Spring Roll</p>
+              <p class="meal-title">Japanese Gyozas</p>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="pricetag-outline"></ion-icon>
-                  <span><strong>Price: </strong>₹ 160</span>
+                  <span><strong>Price: </strong>₹200</span>
                 </li>
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="star-outline"></ion-icon>
                   <span><strong>4.9</strong> rating (537)</span>
                 </li>
+                <!-- <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon> -->
                 <li class="meal-attribute">
-                  <span class="meal-attribute-description"><strong></strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, sapiente.</span>
+                  <!-- <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon> -->
+                  <span class="meal-attribute-description"><strong>Description: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum, eveniet tempore deserunt quibusdam delectus vitae dolore repellendus libero qui.</span>
                 </li>
               </ul>
-              <!-- <form action="/add_to_cart" method="POST">
-              <button name="addDishId" >Add to cart</button></form> -->
+              <form action="/add_to_cart" method="POST">
+                <div align="center">
+              <button name="addDishId" >Add to cart</button></form>
+              </div>
             </div>
           </div>
 
           <div class="meal">
             <img
-              src="static/img/menu/5.png"
+              src="static/img/meals/meal-2.jpg"
               class="meal-img"
-              alt="Spicy Paneer Grilled Burger"
+              alt="Avocado Salad"
             />
             <div class="meal-content">
               <div class="meal-tags">
                 <span class="tag tag--nonVeg">Non-Vegetarian</span>
               </div>
-              <p class="meal-title">Chicken Wings with Hot Sauce</p>
+              <p class="meal-title">Avocado Salad</p>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="pricetag-outline"></ion-icon>
-                  <span><strong>Price: </strong>₹ 200</span>
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>400</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>92</strong></span>
                 </li>
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                  <span><strong>4.9</strong> rating (537)</span>
-                </li>
-                <li class="meal-attribute">
-                  <span class="meal-attribute-description"><strong></strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, sapiente.</span>
+                  <span><strong>4.8</strong> rating (441)</span>
                 </li>
               </ul>
-              <!-- <form action="/add_to_cart" method="POST">
-              <button name="addDishId" >Add to cart</button></form> -->
             </div>
           </div>
-
 
           <div class="diets">
             <h3 class="heading-tertiary">Types of food available:</h3>
             <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Soups</span>
+                <span>Vegetarian</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Appetisers</span>
+                <span>Vegan</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Pizza & Pasta</span>
+                <span>Pescatarian</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Burgers & Sandwiches</span>
+                <span>Gluten-free</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Main Course</span>
+                <span>Lactose-free</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Breads</span>
+                <span>Keto</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Rice and Biryani</span>
+                <span>Paleo</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Desserts</span>
+                <span>Low FODMAP</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Beverages</span>
+                <span>Kid-friendly</span>
               </li>
             </ul>
           </div>
@@ -203,8 +215,7 @@
 
       <section class="section-testimonials">
         <div class="testimonials-container">
-          <!-- <span class="subheading">Testimonials</span> -->
-          <span class="subheading">Feautured Reviews</span>
+          <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Good food and great vibes.</h2>
 
           <div class="testimonials">
@@ -367,7 +378,7 @@
                     name="reg_name"
                     id="name"
                     type="text"
-                    placeholder="Enter your name"
+                    placeholder="John Smith"
                     autocomplete="off"
                     required
                   />
@@ -409,7 +420,7 @@
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" class="cta-input" required>
+                  <select id="select-where" class="cta-input" >
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">YouTube video</option>
@@ -521,5 +532,19 @@
     >
       {{order_placed_message}}
     </div> -->
+    <script>
+
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function() {
+              document.body.classList.toggle("dark-theme");
+
+            if(document.body.classList.contains("dark-theme")) {
+                icon.src = "static/img/sun.png";
+            } else {
+                icon.src = "static/img/moon.png";
+            }
+      }
+  </script>
   </body>
 </html>
